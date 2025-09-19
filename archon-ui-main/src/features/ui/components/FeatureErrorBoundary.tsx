@@ -28,7 +28,6 @@ export class FeatureErrorBoundary extends Component<Props, State> {
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
     // Log detailed error information for debugging in dev/test
     if (import.meta.env.DEV || import.meta.env.MODE === "test") {
-      // biome-ignore lint: intentional diagnostic log in development
       console.error(`Feature Error in ${this.props.featureName}:`, {
         error,
         errorInfo,
@@ -82,7 +81,7 @@ export class FeatureErrorBoundary extends Component<Props, State> {
                   An error occurred in this feature. The error has been logged for investigation.
                 </p>
 
-                {/* Show detailed error in alpha/development (following CLAUDE.md principles) */}
+                {/* Show detailed error in development */}
                 {isDevelopment && error && (
                   <div
                     className={cn(
