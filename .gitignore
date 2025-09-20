@@ -12,3 +12,13 @@ temp/
 UAT/
 
 .DS_Store
+block-lumanela.ps1
+find-lumanela-source.ps1
+fix-auto-activation.ps1
+remove-registry-autorun.ps1
+reset-to-archon.ps1
+setup-archon.bat
+simple-fix.ps1
+setup-archon.bat
+start-archon-powershell.bat
+setup-archon.bat
